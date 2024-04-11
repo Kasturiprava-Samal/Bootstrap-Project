@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(to bottom right, #b9b1b1, #934949);
+}
+
+.content {
+  height: 100vh;
+}
+
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  height: 400px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+  transform: translateY(20%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.btn-primary {
+  margin-top: auto;
+  border: none;
+  transition: background-color 0.3s ease;
+  background-color: #ff5f5f;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #ff5f5f;
+}
+
+.footer {
+  flex-shrink: 0;
+  color: white;
+  background-color: #27292b;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+}
+
+/* Update form container height for smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+    height: 400px;
+    width: 350px;
+  }
+}
+
+/* Adjust footer height and padding for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+    height: 7%;
+  }
+}
+
+/* Center submit button for smaller screens */
+@media (max-width: 768px) {
+  .submit-btn {
+    justify-content: center;
+  }
+}
+
+/* Adjust form input padding for smaller screens */
+@media (max-width: 576px) {
+  .form-control {
+    padding: 8px;
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    height: 400px;
+    width: 350px;
+  }
+}

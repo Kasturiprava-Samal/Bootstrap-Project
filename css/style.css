@@ -1,0 +1,73 @@
+body {
+  background-image: url("../image/pexels-marc-mueller-380768.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+a {
+  color: white !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered {
+  color: black;
+  font-style: italic;
+  font-size: 2rem;
+  animation: fadeInScaleUp 2s;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.7);
+}
+.footer {
+  background-color: transparent;
+  height: 10%;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+}
+@keyframes fadeInScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .centered {
+    font-size: 16px;
+  }
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+}
